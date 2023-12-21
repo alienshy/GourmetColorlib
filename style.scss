@@ -1,0 +1,17 @@
+$bg1: #0f0e0e;
+$bg2: #541212;
+$bg3: #8b9a46;
+$bg4: #eeeeee;
+$col1: #ff7404;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import 'header';
+@import 'section';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'footer';

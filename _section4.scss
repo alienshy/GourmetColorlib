@@ -1,0 +1,69 @@
+.section4 {
+    width: 100%;
+    background-color: $bg3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 100px;
+    padding-bottom: 15%;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+    .fdiv1 {
+        width: 40%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        color: $bg4;
+        justify-content: center;
+
+        h1 {
+            font-size: 50px;
+            position: relative;
+
+            &::before {
+                width: 80px;
+                height: 2px;
+                background: $bg4;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: calc((100% - 80px) / 2);
+            }
+        }
+    }
+
+    .fdiv2 {
+        width: 50%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 999999px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) and (min-width:320px){
+    figure{
+        .fdiv1{
+            width: 100%;
+            text-align: center;
+        }
+        .fdiv2{
+            width: 100%;
+            gap: 10px;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
